@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_colors.dart';
+import '../services/google_sheets_service.dart';
 
 /// Anonim shikoyat yuborish (Anonymous Complaint) screen
 /// Encrypted, no IP/device tracking, fully anonymous
@@ -244,7 +245,13 @@ class _ReportScreenState extends State<ReportScreen> {
     }
     HapticFeedback.mediumImpact();
     setState(() => _isSending = true);
-    await Future.delayed(const Duration(seconds: 2));
+
+    // Send anonymous report to Google Sheets
+    await GoogleSheetsService.submitReport(
+      topic: _selectedTopic!,
+      description: _descController.text.trim(),
+    );
+
     setState(() { _isSending = false; _sent = true; });
   }
 }
