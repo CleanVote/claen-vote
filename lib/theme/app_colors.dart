@@ -65,3 +65,5 @@ class AppColors {
   static const Color cardShadow = Color(0x0D000000); // rgba(0,0,0,0.05)
   static const Color activeShadow = Color(0x14000000); // rgba(0,0,0,0.08)
 }
+
+// 

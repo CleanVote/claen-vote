@@ -179,3 +179,5 @@ class _HomeScreenState extends State<HomeScreen> {
     Navigator.push(context, MaterialPageRoute(builder: (_) => ProjectDetailsScreen(project: project, authService: widget.authService)));
   }
 }
+
+// 
