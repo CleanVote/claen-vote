@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Open Budget - Login</title>
+<!-- Google Fonts: Public Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#9b9d9e",
+                        "surface-tint": "#396093",
+                        "on-tertiary-fixed": "#191c1d",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-secondary-container": "#007239",
+                        "secondary-fixed": "#7efba4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-primary": "#a5c8ff",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1b1b1b",
+                        "outline-variant": "#c3c6d0",
+                        "inverse-surface": "#313030",
+                        "inverse-on-surface": "#f3f0ef",
+                        "secondary-container": "#7bf8a1",
+                        "primary-fixed": "#d4e3ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-container": "#003566",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed-variant": "#1e4879",
+                        "secondary": "#006d37",
+                        "primary": "#002041",
+                        "on-background": "#1b1b1b",
+                        "on-primary-fixed": "#001c3a",
+                        "secondary-fixed-dim": "#61de8a",
+                        "tertiary-fixed": "#e1e3e4",
+                        "on-primary-container": "#7a9fd6",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fcf9f8",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "on-surface-variant": "#43474f",
+                        "primary-fixed-dim": "#a5c8ff",
+                        "surface-container": "#f0eded",
+                        "tertiary-container": "#323536",
+                        "on-secondary-fixed-variant": "#005228",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "tertiary": "#1d2021",
+                        "on-secondary-fixed": "#00210c",
+                        "outline": "#737780",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding": "20px",
+                        "xl": "32px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "sm": "8px",
+                        "gutter": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Public Sans"],
+                        "label-bold": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "body-sm": ["Public Sans"],
+                        "headline-lg": ["Public Sans"],
+                        "button": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "headline-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-bold": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "button": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen flex items-center justify-center relative overflow-hidden font-body-md text-on-background">
+<!-- Decorative Background Image representing Uzbekistan/Civic duty -->
+<div class="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" data-alt="abstract architectural details of a modern government building with clean lines, marble textures, and soft natural sunlight casting gentle shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiGk34K-JQLMYDUxmt19zMIgWYBBWErxEMXQKFCe2HysdMR0XarYT0bAQGokcgho-Fmk-zDVsuhi3XGIuVITPbYqXyKcgSVjdP2V5ch45h46hcS3Y_jG3xZE5PddJkXIclSM-9YFr6AR1mhSc00sRfr_IR5n1QdJbw-XLs0oUWeNO6RPmxp7CLdiLYjDACQIR0QeaSixnzI1khGY8QbuVpi48kgeMu1ZmGKs-5FV7vnRyauFvRwYFvft7IDkLgkjARJjW_qGBm86E'); background-size: cover; background-position: center;">
+</div>
+<!-- Decorative Gradients -->
+<div class="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] bg-primary-container/10 rounded-full blur-[100px] z-0 pointer-events-none"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-secondary-container/10 rounded-full blur-[80px] z-0 pointer-events-none"></div>
+<!-- Main Login Card -->
+<main class="w-full max-w-[420px] mx-container-padding z-10">
+<div class="bg-surface-container-lowest rounded-[16px] shadow-[0px_8px_30px_rgba(0,0,0,0.08)] p-xl flex flex-col gap-lg border border-outline-variant/30">
+<!-- Branding Header -->
+<div class="flex flex-col items-center text-center gap-sm mt-sm">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-xs shadow-sm">
+<span class="material-symbols-outlined icon-fill text-[32px] text-primary">account_balance</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary">Open Budget</h1>
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest">Republic of Uzbekistan</p>
+</div>
+<hr class="border-t border-surface-variant w-full my-xs"/>
+<!-- Welcome & Mission Text -->
+<div class="text-center flex flex-col gap-sm px-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Secure Authentication</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Access the portal using your secure OneID. Participate in transparent allocation of state funds and support our national anti-corruption initiatives.
+                </p>
+</div>
+<!-- Action Area (OneID Only) -->
+<div class="mt-md flex flex-col gap-sm">
+<!-- Primary OneID Button -->
+<button class="w-full bg-primary hover:bg-primary/90 text-on-primary rounded-lg py-md px-lg flex items-center justify-center gap-sm transition-all duration-200 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] active:scale-[0.98]">
+<div class="w-6 h-6 bg-inverse-primary rounded flex items-center justify-center">
+<!-- Representing the OneID logo concept using standard icons -->
+<span class="material-symbols-outlined text-[16px] text-primary">fingerprint</span>
+</div>
+<span class="font-button text-button">Login with OneID</span>
+</button>
+<!-- Security Note -->
+<div class="flex items-center justify-center gap-xs mt-sm text-on-surface-variant/70">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span class="font-label-bold text-label-bold">Encrypted &amp; Government Verified</span>
+</div>
+</div>
+<!-- Footer Links -->
+<div class="mt-sm text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 text-[12px]">
+                    By logging in, you agree to the <a class="text-primary hover:underline font-medium" href="#">Terms of Service</a> and <a class="text-primary hover:underline font-medium" href="#">Privacy Policy</a>.
+                </p>
+</div>
+</div>
+<!-- App Version / Support -->
+<div class="text-center mt-lg font-label-bold text-label-bold text-outline">
+<p>Open Budget v2.4.1</p>
+<p class="mt-xs font-body-sm text-body-sm text-outline/80">Need help? <a class="text-primary hover:underline" href="#">Contact Support</a></p>
+</div>
+</main>
+</body></html>
