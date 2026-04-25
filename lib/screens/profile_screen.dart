@@ -67,3 +67,5 @@ class _InfoRow extends StatelessWidget {
 }
 
 // 
+
+// good luck everyone
